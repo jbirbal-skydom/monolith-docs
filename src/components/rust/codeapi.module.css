@@ -1,0 +1,84 @@
+.editorContainer {
+  border: 1px solid #444;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.editorHeader {
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.fileName {
+  font-weight: bold;
+}
+
+.editorBody {
+  position: relative;
+  counter-reset: line;  /* Add this to reset the line counter */
+}
+
+.codeEditor {
+  position: relative;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  margin: 0;
+  width: 100%;
+}
+/* Add these new styles for line numbers */
+.codeEditor :global(.editorLineNumber) {
+  position: absolute;
+  left: 0;
+  color: #858585;
+  text-align: right;
+  width: 40px;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  user-select: none;
+}
+
+.editorFooter {
+  margin-top: 10px;
+}
+
+.runButton {
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.runButton:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.outputPanel {
+  background: #252526;
+  color: #d4d4d4;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+}
+
+.outputPanel.error {
+  color: #f44747;
+}
+
+.outputContent {
+  white-space: pre-wrap;
+  font-family: "Fira Code", monospace;
+}
+
+/* Ensure the textarea and highlighted code have proper padding */
+.codeEditor textarea,
+.codeEditor pre {
+  padding-left: 50px !important;
+  min-height: 100px;
+  line-height: 1.5;
+}
