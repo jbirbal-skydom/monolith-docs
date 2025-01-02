@@ -32,7 +32,7 @@ const CodeAPI = ({ sandbox = "rust", files = {}, initialCode = "" }) => {
     setImageSrc(null); // Reset the image source
 
     try {
-      const response = await fetch("http://codapi.skydom.ai/v1/exec", {
+      const response = await fetch("https://codapi.skydom.ai/v1/exec", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
