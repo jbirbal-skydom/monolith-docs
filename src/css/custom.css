@@ -6,25 +6,87 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #D64545; /* Vibrant red for branding */
+  --ifm-color-primary-dark: #B83737; /* Darker red for hover */
+  --ifm-color-primary-light: #E57373; /* Lighter red for accents */
+  --ifm-color-secondary: #3CAD6E; /* Emerald green for success or emphasis */
+  --ifm-color-neutral: #1E1E1E; /* Dark gray for text */
+  --ifm-background-color: #F7F7F7; /* Soft background for readability */
+  --ifm-color-highlight: #FFC857; /* Subtle yellow for highlights */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 200, 87, 0.15); /* Yellow highlight */
 }
+
+
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #F28C8C; /* Soft coral */
+  --ifm-color-primary-dark: #D66969; /* Slightly darker coral */
+  --ifm-color-primary-light: #F9AFAF; /* Very light coral for accents */
+  --ifm-color-secondary: #71C89E; /* Mint green for success or emphasis */
+  --ifm-color-neutral: #E0E0E0; /* Light gray for text */
+  --ifm-background-color: #121212; /* Deep charcoal background */
+  --ifm-color-highlight: #FFD685; /* Muted gold for highlights */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 214, 133, 0.15); /* Gold highlight */
+}
+
+
+body {
+  font-family: 'Inter', sans-serif; /* Clean and modern font for content */
+  color: var(--ifm-color-neutral);
+  background-color: var(--ifm-background-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif; /* Elegant serif for headings */
+  color: var(--ifm-color-primary-dark);
+}
+
+a {
+  color: var(--ifm-color-primary);
+}
+
+a:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+.button {
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid var(--ifm-color-primary-dark);
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+code {
+  background-color: #F7F7F7;
+  color: var(--ifm-color-neutral);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: var(--ifm-code-font-size);
+}
+
+pre {
+  background-color: #F2F2F2;
+  padding: 1em;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+pre code {
+  background: none;
+  color: #D64545; /* Red for inline code */
+}
+
+pre[data-theme='dark'] {
+  background-color: #1E1E1E;
+  color: #F28C8C;
 }
