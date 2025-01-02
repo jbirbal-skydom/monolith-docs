@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f0f4f8" />
+  
+  <!-- Code Window Frame -->
+  <rect x="40" y="40" width="120" height="120" rx="6" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="40" y="40" width="120" height="24" rx="6" fill="#e2e8f0"/>
+  <circle cx="54" cy="52" r="4" fill="#94a3b8"/>
+  <circle cx="70" cy="52" r="4" fill="#94a3b8"/>
+  <circle cx="86" cy="52" r="4" fill="#94a3b8"/>
+  
+  <!-- Code Lines -->
+  <g transform="translate(50, 80)">
+    <!-- Function Declaration -->
+    <rect x="0" y="0" width="60" height="8" rx="2" fill="#3b82f6" opacity="0.6"/>
+    <rect x="65" y="0" width="40" height="8" rx="2" fill="#60a5fa" opacity="0.4"/>
+    
+    <!-- Parameters -->
+    <rect x="10" y="16" width="80" height="8" rx="2" fill="#4338ca" opacity="0.2"/>
+    
+    <!-- Response Object -->
+    <rect x="20" y="32" width="70" height="8" rx="2" fill="#3b82f6" opacity="0.6"/>
+    <rect x="20" y="48" width="50" height="8" rx="2" fill="#60a5fa" opacity="0.4"/>
+  </g>
+  
+  <!-- Monolith Hexagon (Mini) -->
+  <g transform="translate(130, 110) scale(0.4)">
+    <path d="M40 0 L80 23.1 L80 69.3 L40 92.4 L0 69.3 L0 23.1 Z" fill="#4338ca" opacity="0.2"/>
+    <path d="M20 11.55 L40 0 L60 11.55 L60 34.65 L40 46.2 L20 34.65 Z" fill="#3b82f6" opacity="0.6"/>
+    <path d="M40 46.2 L60 34.65 L60 57.75 L40 69.3 L20 57.75 L20 34.65 Z" fill="#60a5fa" opacity="0.4"/>
+  </g>
+  
+  <!-- API Docs Text -->
+  <path id="curve" d="M30,160 A110,110 0 0,1 170,160" fill="none"/>
+  <text>
+    <textPath href="#curve" startOffset="50%" text-anchor="middle" fill="#1e40af" font-size="14" font-family="system-ui">
+      API Documentation
+    </textPath>
+  </text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f0f4f8" />
+  
+  <!-- Monolith Color Pattern (Simplified) -->
+  <g transform="translate(60, 60)">
+    <!-- Hexagonal Grid Pattern -->
+    <path d="M40 0 L80 23.1 L80 69.3 L40 92.4 L0 69.3 L0 23.1 Z" fill="#4338ca" opacity="0.2" />
+    <path d="M20 11.55 L40 0 L60 11.55 L60 34.65 L40 46.2 L20 34.65 Z" fill="#3b82f6" opacity="0.6" />
+    <path d="M40 46.2 L60 34.65 L60 57.75 L40 69.3 L20 57.75 L20 34.65 Z" fill="#60a5fa" opacity="0.4" />
+  </g>
+  
+  <!-- Fast-forward Arrow -->
+  <g transform="translate(85, 85)">
+    <path d="M30 15 L45 30 L30 45 L30 35 L0 35 L0 25 L30 25 Z" fill="#2563eb"/>
+  </g>
+  
+  <!-- Quick Start Text Path -->
+  <path id="curve" d="M30,160 A110,110 0 0,1 170,160" fill="none" />
+  <text>
+    <textPath href="#curve" startOffset="50%" text-anchor="middle" fill="#1e40af" font-size="14" font-family="system-ui">
+      Quick Start
+    </textPath>
+  </text>
+</svg>
