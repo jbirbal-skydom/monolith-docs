@@ -6,8 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Monolith Documentation',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  tagline: 'The Next Generation of Barcode Technology',
+  favicon: 'https://s3-wp.birbal.dev/monolith/uploads/2024/12/Monolith_Favicon.png',
 
   // Set the production url of your site here
   url: 'https://docs.monolith.skydom.ai',
@@ -59,6 +59,7 @@ const config: Config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -70,9 +71,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Monolith',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Monolith Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -82,9 +83,9 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/jbirbal-skydom/monolith-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -97,7 +98,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Getting Started',
               to: '/docs/intro',
             },
           ],
@@ -106,34 +107,30 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Discussions',
+              href: 'https://github.com/jbirbal-skydom/monolith-docs/discussions',
             },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+            // {
+            //   label: 'Discord',
+            //   href: 'https://discordapp.com/invite/docusaurus',
+            // },
           ],
         },
         {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'skydom',
+              href: 'https://skydom.ai',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/jbirbal-skydom/monolith-docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Monolith Project. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
