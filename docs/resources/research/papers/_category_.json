@@ -1,0 +1,8 @@
+{
+  "label": "Papers",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Published research papers supporting Monolith."
+  }
+}

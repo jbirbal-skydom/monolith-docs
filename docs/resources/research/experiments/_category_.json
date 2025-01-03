@@ -1,0 +1,8 @@
+{
+  "label": "Experiments",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Explore experiments conducted by Monolith and the community."
+  }
+}

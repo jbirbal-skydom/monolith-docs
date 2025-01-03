@@ -1,0 +1,8 @@
+{
+  "label": "Integration Guides",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to integrate Monolith with other tools and services."
+  }
+}

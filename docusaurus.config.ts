@@ -65,7 +65,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/jbirbal-skydom/monolith-docs/tree/master/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -89,11 +89,28 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'startedSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'Get Started',
         },
-
+        {
+          type: 'docSidebar',
+          sidebarId: 'apiSidebar',
+          position: 'left',
+          label: 'API',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'conceptSidebar',
+          position: 'left',
+          label: 'Concepts',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'resourceSidebar',
+          position: 'left',
+          label: 'Resources',
+        },
         {
           href: 'https://github.com/jbirbal-skydom/monolith-docs',
           label: 'GitHub',
@@ -130,7 +147,7 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'skydom',
+              label: 'Skydom',
               href: 'https://skydom.ai',
             },
             {
