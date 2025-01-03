@@ -4,14 +4,21 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "start": "npm run gen-all && docusaurus start",
+    "build": "npm run gen-all && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+    "gen-api-docs": "docusaurus gen-api-docs",
+    "clean-api-docs": "docusaurus clean-api-docs",
+    "gen-api-docs:version": "docusaurus gen-api-docs:version",
+    "clean-api-docs:version": "docusaurus clean-api-docs:version",
+    "gen-all": "docusaurus gen-api-docs all --all-versions",
+    "clean-all": "docusaurus clean-api-docs all --all-versions",
+    "re-gen": "npm run clean-all && npm run gen-all",
     "typecheck": "tsc"
   },
   "dependencies": {
