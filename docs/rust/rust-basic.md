@@ -23,6 +23,10 @@ Welcome to our interactive Rust tutorial! This page demonstrates how to use Rust
 
 Let's start with a simple "Hello, World!" program:
 
+```rs
+    println!("Hello, World!");
+```
+
 <CodeAPI
   sandbox="rust"
   files={{
