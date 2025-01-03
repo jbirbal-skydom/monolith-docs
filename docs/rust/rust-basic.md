@@ -23,7 +23,7 @@ Welcome to our interactive Rust tutorial! This page demonstrates how to use Rust
 
 Let's start with a simple "Hello, World!" program:
 
-```rs
+```rust
     println!("Hello, World!");
 ```
 
@@ -95,7 +95,6 @@ fn main() {
         Ok(result) => println!("10 / 2 = {}", result),
         Err(e) => println!("Error: {}", e),
     }
-
     match divide(10.0, 0.0) {
         Ok(result) => println!("10 / 0 = {}", result),
         Err(e) => println!("Error: {}", e),
@@ -121,14 +120,12 @@ fn main() {
     let width = 256u32;
     let height = 256u32;
     let mut img = ImageBuffer::new(width, height);
-
     // Fill with a purple to orange gradient
     for (x, y, pixel) in img.enumerate_pixels_mut() {
-        let r = (x as f32 / width as f32 * 255.0) as u8;
-        let b = (y as f32 / height as f32 * 255.0) as u8;
+        let r = (x as f32 / width as f32*255.0) as u8;
+        let b = (y as f32 / height as f32*255.0) as u8;
         *pixel = Rgb([r, 0, b]);
     }
-
     // Convert to PNG using a buffer
     let mut png_data: Vec<u8> = Vec::new();
     {
@@ -136,7 +133,6 @@ fn main() {
         img.write_to(&mut cursor, image::ImageFormat::Png)
             .expect("Failed to encode image");
     }
-
     // Encode to base64
     let base64 = base64::engine::general_purpose::STANDARD.encode(&png_data);
     println!("data:image/png;base64,{}", base64);

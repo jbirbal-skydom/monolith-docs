@@ -143,7 +143,30 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Monolith Project. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
+      theme: {
+        plain: {
+          backgroundColor: '#2A1B1B', // Matches basic code block background
+          color: '#F7D9D9', // Light pink for base text
+        },
+        styles: [
+          {
+            types: ['keyword'],
+            style: { color: '#8B0909', fontStyle: 'italic' }, // Monolith red for keywords
+          },
+          {
+            types: ['string', 'char'],
+            style: { color: '#3CAD6E' }, // Monolith green for strings
+          },
+          {
+            types: ['function'],
+            style: { color: '#FFC857' }, // Yellow for functions
+          },
+          {
+            types: ['comment'],
+            style: { color: '#7A2020', fontStyle: 'italic' }, // Muted maroon for comments
+          },
+        ],
+      },
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['rust'],
     },

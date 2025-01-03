@@ -66,30 +66,7 @@ a:hover {
   background-color: var(--ifm-color-primary-dark);
 }
 
-code {
-  background-color: #F7F7F7;
-  color: var(--ifm-color-neutral);
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-  font-size: var(--ifm-code-font-size);
-}
 
-pre {
-  background-color: #F2F2F2;
-  padding: 1em;
-  border-radius: 5px;
-  overflow: auto;
-}
-
-pre code {
-  background: none;
-  color: #D64545; /* Red for inline code */
-}
-
-pre[data-theme='dark'] {
-  background-color: #1E1E1E;
-  color: #F28C8C;
-}
 
 /* for api badge */
 .api-method > .menu__link {
@@ -149,4 +126,52 @@ pre[data-theme='dark'] {
 .schema > .menu__link::before {
   content: "schema";
   color: var(--ifm-color-secondary-contrast-foreground);
+}
+/* Target basic code blocks */
+.theme-code-block {
+  background-color: #2A1B1B !important; /* Deep maroon for a subtle branded background */
+}
+
+/* Target the inner code container */
+.theme-code-block pre {
+  background-color: #1A0F0F !important; /* Darker maroon for inner container contrast */
+}
+
+/* Target inline code */
+code {
+  background-color: #F5EDEB; /* Light pinkish neutral for Monolith branding */
+  color: #8B0909; /* Monolith's red tone for inline code text */
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: var(--ifm-code-font-size);
+}
+
+/* Target syntax highlighting background */
+[class*='codeBlockContainer'] {
+  background-color: #3E2727 !important; /* Subdued maroon for syntax block background */
+}
+
+/* Target the line numbers column */
+.prism-code {
+  background-color: #5B2020 !important; /* Muted dark red for line numbers */
+  color: #F7D9D9; /* Light pink for number text */
+}
+
+/* General pre block background and text */
+pre {
+  background-color: #F5F5F5; /* Light neutral for better readability */
+  padding: 1em;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+pre code {
+  background: none;
+  color: #D64545; /* Monolith's red for inline code */
+}
+
+/* Dark mode for pre blocks */
+pre[data-theme='dark'] {
+  background-color: #2A1A1A; /* Deep maroon for dark mode */
+  color: #F28C8C; /* Softer coral for readability */
 }
