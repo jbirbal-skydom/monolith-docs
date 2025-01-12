@@ -21,13 +21,13 @@ Build library
     --out-dir out
     ```
 
-Compile module:
+Compile module (if needed):
 
     ```sh
 swiftc \
     -module-name MonolithCore \
-    -emit-library -o libmonolithcore.dylib \
-    -emit-module -emit-module-path ./out \
+    -emit-library -o libmonolithcore.a \
+    -emit-module -emit-module-path ./out/ \
     -parse-as-library \
     -L ./target/x86_64-apple-ios/release \
     -lmonolithcore \
@@ -37,6 +37,30 @@ swiftc \
     out/MonolithCore.swift
 
     ```
+
+xframe
+
+```sh
+xcodebuild -create-xcframework \
+  -library ./target/x86_64-apple-ios/release/libmonolithcore.a \
+  -headers ./out/ \
+  -output ./MonolithCore.xcframework
+  
+```
+drop the files into xcode project
+
+    ```bash
+    MyXcodeProject/
+    ├── MonolithIntegration/  # New folder for Rust-related files
+    │   ├── MonolithCore.swift
+    │   ├── MonolithFFIFile.h
+    │   ├── MonolithFFIFile.modulemap
+    │   ├── libmonolithcore.a
+    ```
+
+Build settings> Library Search Paths / Import Path >$(PROJECT_DIR)/MonolithIntegration
+General>Frameworks, Libraries, and Embedded Content>Add Other...>libmonolithcore.a
+
 
 create application
 click on the project name on the  Project Navigator
