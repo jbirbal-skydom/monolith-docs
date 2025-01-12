@@ -6,7 +6,7 @@ title: Android specific instructions
 ktlint
 
 * install [Java](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-17)
-* [ktlinkt](https://github.com/pinterest/ktlint/releases)
+* [ktlint](https://github.com/pinterest/ktlint/releases)
   * download `.bat` and `.zip`
   * place in same folder
   * add `.bat` to the path
@@ -15,7 +15,7 @@ add target:
 `rustup target add aarch64-linux-android armv7-linux-androideabi i686-linux-android x86_64-linux-android`
 
 add ndk:
-downdload android studio install the ndk add to path
+download android studio install the ndk add to path
 
 ```bash
 set ANDROID_NDK_HOME=<NDK_PATH>
