@@ -15,6 +15,7 @@ Build library
 
     ```sh
     cargo build --target x86_64-apple-ios --release
+    cargo build --target aarch64-apple-ios --release
     cargo run --bin uniffi-bindgen generate \
     --library target/x86_64-apple-ios/release/libmonolithcore.a \
     --language swift \
@@ -45,7 +46,7 @@ xcodebuild -create-xcframework \
   -library ./target/x86_64-apple-ios/release/libmonolithcore.a \
   -headers ./out/ \
   -output ./MonolithCore.xcframework
-  
+
 ```
 drop the files into xcode project
 
