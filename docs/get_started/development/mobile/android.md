@@ -3,13 +3,16 @@ sidebar_position: 3
 title: Android specific instructions
 ---
 
-ktlint
+Insall [Android Studio](https://developer.android.com/studio)
+Install the NDK under hte SDK manager on the Android Studio
+
+<!-- ktlint
 
 * install [Java](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-17)
 * [ktlint](https://github.com/pinterest/ktlint/releases)
   * download `.bat` and `.zip`
   * place in same folder
-  * add `.bat` to the path
+  * add `.bat` to the path -->
 
 add target:
 `rustup target add aarch64-linux-android armv7-linux-androideabi i686-linux-android x86_64-linux-android`
