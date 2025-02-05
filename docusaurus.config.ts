@@ -76,7 +76,9 @@ const config: Config = {
   stylesheets: [
     // ... other stylesheets
   ],
-  themes: ['docusaurus-theme-openapi-docs'],
+  themes: ['docusaurus-theme-openapi-docs', 
+    '@docusaurus/theme-mermaid',
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -99,12 +101,12 @@ const config: Config = {
           position: 'left',
           label: 'API',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'conceptSidebar',
-          position: 'left',
-          label: 'Concepts',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'conceptSidebar',
+        //   position: 'left',
+        //   label: 'Concepts',
+        // },
         {
           type: 'docSidebar',
           sidebarId: 'resourceSidebar',
@@ -186,6 +188,9 @@ const config: Config = {
       },
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['rust'],
+    },
+    mermaid: {
+      theme: { light: 'default', dark: 'dark' }, // Mermaid diagram themes
     },
   } satisfies Preset.ThemeConfig,
 };
