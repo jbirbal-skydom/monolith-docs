@@ -101,12 +101,12 @@ const config: Config = {
           position: 'left',
           label: 'API',
         },
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'conceptSidebar',
-        //   position: 'left',
-        //   label: 'Concepts',
-        // },
+        {
+          type: 'docSidebar',
+          sidebarId: 'conceptSidebar',
+          position: 'left',
+          label: 'Concepts',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'resourceSidebar',
