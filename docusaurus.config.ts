@@ -193,6 +193,10 @@ const config: Config = {
       theme: { light: 'default', dark: 'dark' }, // Mermaid diagram themes
     },
   } satisfies Preset.ThemeConfig,
+
+  markdown: {
+    mermaid: true,
+  },
 };
 
 export default config;
