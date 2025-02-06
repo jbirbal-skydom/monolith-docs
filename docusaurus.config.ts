@@ -114,7 +114,7 @@ const config: Config = {
           label: 'Resources',
         },
         {
-          href: 'https://github.com/jbirbal-skydom/monolith-docs',
+          href: 'https://github.com/jbirbal-skydom/monolith',
           label: 'GitHub',
           position: 'right',
         },
@@ -137,7 +137,7 @@ const config: Config = {
           items: [
             {
               label: 'Discussions',
-              href: 'https://github.com/jbirbal-skydom/monolith-docs/discussions',
+              href: 'https://github.com/jbirbal-skydom/monolith/discussions',
             },
             // {
             //   label: 'Discord',
@@ -154,7 +154,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/jbirbal-skydom/monolith-docs',
+              href: 'https://github.com/jbirbal-skydom/monolith',
             },
           ],
         },
