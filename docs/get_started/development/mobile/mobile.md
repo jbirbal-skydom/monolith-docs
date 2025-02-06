@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
-title: Setup for mobile ffi
+title: Setup for Mobile FFI
+draft: true
 ---
 
 

@@ -1,15 +1,14 @@
 ---
-sidebar_position: 1
+sidebar_position: 7
 title: Dev environment (HOST)
+draft: false
 ---
 
 Most development environment setup is the same. Essentially install:
 
-* VScode
-* Rust
+* [VScode](https://code.visualstudio.com/)
+* [Rust](https://www.rust-lang.org/tools/install)
   * rust target
-* _OSX_
-  * _XCODE_
 * Clone the repo
   
     ```sh
@@ -20,3 +19,9 @@ Most development environment setup is the same. Essentially install:
     ```
 
 * Build
+
+:::info
+
+ **OSX and Mac users** you will need [`xcode`](https://developer.apple.com/xcode/).
+
+:::

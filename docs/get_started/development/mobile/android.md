@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: Android specific instructions
+draft: true
 ---
 
 Insall [Android Studio](https://developer.android.com/studio)

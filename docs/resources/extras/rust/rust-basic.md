@@ -1,5 +1,6 @@
 ---
 title: Rust integration
+draft: false
 ---
 <!-- markdownlint-disable-file MD033 -->
 

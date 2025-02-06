@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
-title: Resource
-tag: folder
+title: Desktop
 draft: true
 ---
