@@ -1,0 +1,8 @@
+{
+  "label": "Resources",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Supplementary materials, tools, and community resources for Monolith."
+  }
+}

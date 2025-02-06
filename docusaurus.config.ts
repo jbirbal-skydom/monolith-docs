@@ -61,6 +61,13 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          includeCurrentVersion: true, // Show current unversioned docs
+          lastVersion: 'current', // Label for the current docs
+          versions: {
+            current: {
+              label: 'Pre-Alpha',  // Display label for current docs
+            },
+          },
           docItemComponent: '@theme/ApiItem', // Add this line
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -112,6 +119,11 @@ const config: Config = {
           sidebarId: 'resourceSidebar',
           position: 'left',
           label: 'Resources',
+        },
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownActiveClassDisabled: true,
         },
         {
           href: 'https://github.com/jbirbal-skydom/monolith',
