@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmonolith_docs=self.webpackChunkmonolith_docs||[]).push([[7723],{57723:(e,s,c)=>{c.d(s,{createPieServices:()=>o.f});var o=c(88685);c(19369)}}]);

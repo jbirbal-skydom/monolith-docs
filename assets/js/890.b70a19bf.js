@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmonolith_docs=self.webpackChunkmonolith_docs||[]).push([[890],{10890:(e,s,c)=>{c.d(s,{createInfoServices:()=>o.v});var o=c(97021);c(19369)}}]);

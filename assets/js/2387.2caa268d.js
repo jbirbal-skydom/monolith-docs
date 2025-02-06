@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmonolith_docs=self.webpackChunkmonolith_docs||[]).push([[2387],{82387:(e,s,c)=>{c.d(s,{createGitGraphServices:()=>h.b});var h=c(82785);c(19369)}}]);
