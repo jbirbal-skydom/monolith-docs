@@ -14,7 +14,7 @@ def ask(query, conversation_history=None, codebase_dir="/root/monolith"):
         conversation_history: Previous conversation history
         codebase_dir: Directory containing the codebase (default: /root/monolith)
     """
-    model_name = "mixtral"  # 32K context window
+    model_name = "codellama:34b"  # 32K context window
     
     # If no conversation history provided, try to load from file
     if conversation_history is None:
@@ -126,7 +126,7 @@ Question: {question}
         model=model_name,
         temperature=0.1,  # Lower temperature for more factual responses
         top_p=0.95,       # Slight adjustment
-        num_ctx=32768,    # Set context window to 32K for mixtral
+        num_ctx=16384,    # Set context window to 32K for mixtral
         repeat_penalty=1.2,  # Add a repeat penalty to reduce repetition
         presence_penalty=0.5,  # Encourage new content
     )
